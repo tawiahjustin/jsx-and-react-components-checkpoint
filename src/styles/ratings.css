@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --Light_Grey: hsl(217, 12%, 63%);
+  --Medium_Grey: hsl(216, 12%, 54%);
+  --Dark_Blue: hsl(213, 19%, 18%);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+body {
+  background: var(--Very_Dark_Blue);
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background: var(--Dark_Blue);
+  color: hsl(0, 0%, 100%);
+  height: 22rem;
+  width: 22rem;
+  border-radius: 1rem;
+  margin-top: 10rem;
+}
+.Star-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: hsl(213, 18%, 22%);
+}
+
+.Text p {
+  margin-top: 20px;
+  color: var(--Light_Grey);
+  font-size: 14px;
+  line-height: 18px;
+}
+.Ratings-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Ratings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: var(--Light_Grey);
+  background-color: hsl(213, 18%, 22%);
+  cursor: pointer;
+}
+.Ratings:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: var(--Orange);
+}
+.Ratings:active {
+  color: hsl(0, 0%, 100%);
+  background-color: var(--Light_Grey);
+}
+
+.SubmitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--Orange);
+  cursor: pointer;
+}
+.SubmitBtn:active {
+  background-color: hsl(0, 0%, 100%);
+  color: var(--Orange);
+}
+@media (max-width: 375px) {
+  body {
+    display: block;
+    padding: 15rem 1rem;
+  }
+  .Container {
+    width: 98%;
+    margin: 0;
+  }
+}
